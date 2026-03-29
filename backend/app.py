@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Configure CORS to explicitly allow requests from your Firebase Hosting frontend
 # Replace 'https://potato-plant-disease-detection.web.app' with your exact frontend URL
-CORS(app, resources={r"/predict": {"origins": "https://potato-plant-disease-detection.web.app/"}})
+CORS(app, resources={r"/predict": {"origins": "https://potato-plant-disease-detection.web.app"}})
 
 # --- Load Model and Handle Potential Errors ---
 # This ensures the app doesn't crash if the model file is missing or corrupted.
